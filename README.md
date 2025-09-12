@@ -5,7 +5,6 @@
   <br>
   <i>CRUD completo + Autenticação JWT + Respostas padronizadas</i>
 </p>
-
 <p align="center">
   <img src="https://img.shields.io/badge/Node.js-18.x-green?logo=nodedotjs" alt="Node.js">
   <img src="https://img.shields.io/badge/Express.js-4.x-lightgrey?logo=express" alt="Express.js">
@@ -14,8 +13,6 @@
   <img src="https://img.shields.io/badge/OpenAPI-3.0.3-teal?logo=openapiinitiative" alt="OpenAPI">
   <img src="https://img.shields.io/badge/Prisma-ORM-2D3748?logo=prisma" alt="Prisma ORM">
 </p>
-
-
 ---
 
 ## 📖 Sobre
@@ -28,33 +25,33 @@ Funcionalidades principais:
 - 📌 CRUD completo de anotações (criar, listar, atualizar, remover)
 - 📜 Documentação em **OpenAPI/Swagger**
 - ⚡ Respostas padronizadas (status + mensagem + dados)
-
+  
 ---
 ## 🛠 Tecnologias
 
 <p align="center">
   <span style="display:inline-block; text-align:center; margin:0 15px;">
-    <img src="https://cdn.simpleicons.org/nodedotjs/339933" width="35" height="35"/><br>
+    <img src="https://cdn.simpleicons.org/nodedotjs/339933" width="35" height="35"/>
     <sub>Node.js</sub>
   </span>
   <span style="display:inline-block; text-align:center; margin:0 15px;">
-    <img src="https://cdn.simpleicons.org/express/000000" width="35" height="35"/><br>
+    <img src="https://cdn.simpleicons.org/express/000000" width="35" height="35"/>
     <sub>Express</sub>
   </span>
   <span style="display:inline-block; text-align:center; margin:0 15px;">
-    <img src="https://cdn.simpleicons.org/typescript/3178C6" width="35" height="35"/><br>
+    <img src="https://cdn.simpleicons.org/typescript/3178C6" width="35" height="35"/>
     <sub>TypeScript</sub>
   </span>
   <span style="display:inline-block; text-align:center; margin:0 15px;">
-    <img src="https://cdn.simpleicons.org/jsonwebtokens/000000" width="35" height="35"/><br>
+    <img src="https://cdn.simpleicons.org/jsonwebtokens/000000" width="35" height="35"/>
     <sub>JWT</sub>
   </span>
   <span style="display:inline-block; text-align:center; margin:0 15px;">
-    <img src="https://cdn.simpleicons.org/openapiinitiative/6BA539" width="35" height="35"/><br>
+    <img src="https://cdn.simpleicons.org/openapiinitiative/6BA539" width="35" height="35"/>
     <sub>OpenAPI</sub>
   </span>
   <span style="display:inline-block; text-align:center; margin:0 15px;">
-    <img src="https://cdn.simpleicons.org/prisma/2D3748" width="35" height="35"/><br>
+    <img src="https://cdn.simpleicons.org/prisma/2D3748" width="35" height="35"/>
     <sub>Prisma</sub>
   </span>
 </p>
