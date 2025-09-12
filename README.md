@@ -14,6 +14,8 @@
   <img src="https://img.shields.io/badge/Prisma-ORM-2D3748?logo=prisma" alt="Prisma ORM">
 </p>
 
+---
+
 ## 📖 Sobre
 A **Notes API** permite que utilizadores criem, organizem e gerenciem anotações pessoais de forma **segura**.  
 Todos os endpoints de notas requerem autenticação via **Bearer Token (JWT)**.
