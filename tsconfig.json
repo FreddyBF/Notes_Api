@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                     // Suporte moderno para async/await
+    "module": "commonjs",                   // CommonJS para evitar loaders
+    "moduleResolution": "node",             // Resolução padrão do Node
+    "rootDir": "./src",                      // Código-fonte
+    "outDir": "./dist",                      // Código compilado
+    "lib": ["ES2020"],                       // APIs modernas
+    "types": ["node"],                       // Tipos do Node.js
+    "sourceMap": true,                       // Mapas de origem para debug
+    "strict": true,                          // Regras estritas
+    "esModuleInterop": true,                 // Permite importar libs CommonJS com sintaxe ES
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "ignoreDeprecations": "5.0"
+  }
+}
+

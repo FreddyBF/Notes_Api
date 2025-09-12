@@ -1,0 +1,24 @@
+# Node modules
+node_modules/
+
+
+# Environment variables
+.env
+
+# Prisma
+prisma/dev.db
+prisma/dev.db-journal
+prisma/migrations/
+
+# Build output
+dist/
+
+# TypeScript
+*.tsbuildinfo
+
+# IDEs
+.vscode/
+
+# Optional: ignore SQLite backups
+*.sqlite
+*.sqlite-journal

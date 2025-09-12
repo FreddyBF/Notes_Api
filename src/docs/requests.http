@@ -1,0 +1,62 @@
+### ============================
+### Variáveis de ambiente locais
+### ============================
+@baseUrl = http://localhost:8000/api/v1
+@token = 
+### ============================
+
+
+### Registrar novo usuário
+POST {{baseUrl}}/auth/register
+Content-Type: application/json
+
+{
+  "name": "Alfredo Baptista",
+  "email": "baptistaalfredo81@gmail.com",
+  "password": "123456A"
+}
+
+### Login de usuário
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "baptistaalfredo81@gmail.com",
+  "password": "123456A"
+}
+
+### ============================
+### NOTES - CRUD
+### ============================
+
+### Listar todas as notas
+GET {{baseUrl}}/notes
+Authorization: Bearer {{token}}
+
+### Criar nova nota
+POST {{baseUrl}}/notes
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "title": "Nota2",
+  "content": "Conteudo Nota2"
+}
+
+### Obter nota por ID
+GET {{baseUrl}}/notes/1
+Authorization: Bearer {{token}}
+
+### Atualizar nota existente
+PUT {{baseUrl}}/notes/1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "title": "Aula de segurança da Computação - Atualizada",
+  "content": "Conteúdo atualizado sobre segurança"
+}
+
+### Deletar nota
+DELETE {{baseUrl}}/notes/1
+Authorization: Bearer {{token}}
