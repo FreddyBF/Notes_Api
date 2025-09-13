@@ -1,0 +1,11 @@
+export const ResponseCodes = {
+  NOTE_CREATED: 'NOTE_CREATED',
+  NOTES_FETCH_SUCCESS: 'NOTES_FETCH_SUCCESS',
+  NOTE_UPDATED: 'NOTE_UPDATED',
+  NOTE_DELETED: 'NOTE_DELETED',
+  NOTE_CONFLICT: 'NOTE_CONFLICT',
+  VALIDATION_ERROR: 'VALIDATION_ERROR',
+  TOKEN_EXPIRED: 'TOKEN_EXPIRED'
+} as const;
+
+export type ResponseCode = typeof ResponseCodes[keyof typeof ResponseCodes];
