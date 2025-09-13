@@ -1,4 +1,3 @@
-import { Note } from '@prisma/client';
 import { NoteRepository } from '../repositories/notes.repository';
 import { CreateNoteDTO, UpdateNoteDTO, NoteResponseDTO } from '../dtos/note.dto';
 import { NotFoundError, NoteConflictError } from '../exceptions/domain/index';
@@ -24,9 +23,9 @@ export class NoteService {
     return NoteMapper.toResponse(createdNote);
   }
 
-    async getAllNotesByUser(userId: number): Promise<NoteResponseDTO[]> {
-      const notes = await this.noteRepository.findAllByUser(userId);
-      return NoteMapper.toResponseList(notes);
+  async getAllNotesByUser(userId: number): Promise<NoteResponseDTO[]> {
+    const notes = await this.noteRepository.findAllByUser(userId);
+    return NoteMapper.toResponseList(notes);
   }
 
   async getNoteById(id: number, userId: number): Promise<NoteResponseDTO> {
