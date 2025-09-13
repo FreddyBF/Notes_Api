@@ -17,7 +17,14 @@ export const validate = <T extends ZodType>(schema: T, part: RequestPart = 'body
         path: e.path.join('.'),
         message: e.message,
       }));
-      res.json(ApiResponse.error(`Erro de validação`, 400, 'Bad Request', 'VALIDATION_ERROR',errors));
+      res.json(
+        ApiResponse.error(
+          "Alguns campos não foram preenchidos corretamente."
+          , 422, 
+          'Validation Error', 
+          'VALIDATION_ERROR',
+          errors
+        ));
     }
 
     // Sobrescreve a parte da requisição (body, query ou params) com os dados já validados e tipados.

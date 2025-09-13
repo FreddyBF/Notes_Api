@@ -22,3 +22,4 @@ dist/
 # Optional: ignore SQLite backups
 *.sqlite
 *.sqlite-journal 
+Notes-Api.http

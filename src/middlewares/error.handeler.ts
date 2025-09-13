@@ -81,7 +81,11 @@ export function errorHandler(err: Error, req: Request, res: Response, next: Next
     );
   } else {
     res.status(500).json(
-      ApiResponse.error('Internal Server Error', 500, 'INTERNAL_ERROR', 'INTERNAL_ERROR'),
+      ApiResponse.error(
+        'Internal Server Error', 
+        500, 'INTERNAL_ERROR', 
+        'INTERNAL_ERROR'
+      ),
     );
   }
 }
