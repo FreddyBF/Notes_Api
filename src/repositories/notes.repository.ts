@@ -5,13 +5,17 @@ export class NoteRepository {
 
   async findAllByUser(userId: number): Promise<Note[]> {
     return this.prisma.note.findMany({
-      where: { userId }
+      where: { userId },
+      orderBy: { id: 'desc' }
     });
   }
 
   async findByTitleAndUser(title: string, userId: number): Promise<Note | null> {
     return this.prisma.note.findFirst({
-      where: { title, userId }
+      where: { 
+        title, 
+        userId 
+      }
     });
   }
 
